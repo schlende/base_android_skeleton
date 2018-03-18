@@ -11,8 +11,13 @@ import java.util.TimerTask;
 
 public class TimerModel extends BaseObservable {
 
+    public enum Status {
+        RUNNING, STOPPED
+    }
+
     private int currentTimeInSeconds = 0;
     private Timer timer;
+    private Status status = Status.STOPPED;
 
 
     public TimerModel(){
@@ -26,6 +31,14 @@ public class TimerModel extends BaseObservable {
     public void setCurrentTimeInSeconds(int currentTimeInSeconds) {
         this.currentTimeInSeconds = currentTimeInSeconds;
         this.notifyChange();
+    }
+
+    public String getStatusString(){
+        return status.toString();
+    }
+
+    public Status getStatus(){
+        return status;
     }
 
     public void startTimer(){

@@ -35,6 +35,7 @@ ext{
     picassoVersion = '2.5.2'
     archVersion = '1.1.0'
     roomArchVersion = '1.0.0'
+    mockitoVersion = '2.6.1'
 
     supportLibAppCompat = "com.android.support:appcompat-v7:$supportLibVersion"
     supportLibDesign = "com.android.support:design:$supportLibVersion"
@@ -52,4 +53,5 @@ ext{
     gsonConverter = "com.squareup.retrofit2:converter-gson:$gsonConverterVersion"
     okhttp = "com.squareup.okhttp3:okhttp:$okhttpVersion"
     picasso = "com.squareup.picasso:picasso:$picassoVersion"
+    mockito = "org.mockito:mockito-core:$mockitoVersion"
 }
